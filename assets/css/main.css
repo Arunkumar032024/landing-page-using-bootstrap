@@ -4,4 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body header {
+  background-color: rgba(0, 0, 0, 0.0666666667);
 }/*# sourceMappingURL=main.css.map */
