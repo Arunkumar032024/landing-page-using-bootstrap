@@ -10,6 +10,31 @@ html {
   scroll-behavior: smooth;
 }
 
+.btn {
+  -webkit-appearance: none;
+  border-radius: 20px;
+}
+
+@keyframes jumps {
+  0%, 100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+body {
+  max-width: 1400px;
+}
 body header {
-  background-color: rgba(0, 0, 0, 0.0666666667);
+  max-width: 1400px;
+}
+body main section#home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(55, 81, 126);
+}
+body main section#home img {
+  transition: all 1s ease-in-out;
+  animation: jumps 3s forwards infinite;
 }/*# sourceMappingURL=main.css.map */

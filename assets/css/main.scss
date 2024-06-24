@@ -13,7 +13,16 @@
 html{
     scroll-behavior: smooth;
 }
+.btn{
+    -webkit-appearance: none;
+    border-radius: 20px;
+}
 
+
+@keyframes jumps {
+    0%, 100%{transform: translateY(-10px);}
+    50%{transform: translateY(10px);}
+}
 // ================================
 // End custom section css
 // ================================
@@ -24,12 +33,16 @@ html{
 // body section css
 // ================================
 body{
-
+    max-width: 1400px;
     // ================================
     // header section css
     // ================================
     header{
-        background-color: $bglight;
+        max-width: 1400px;
+        // background-color: $bglight;
+        // z-index: 1000;
+        nav{
+        }
     }
     // ================================
     // End header section css
@@ -45,7 +58,13 @@ body{
         // home section css 
         // ================================
         section#home{
-
+            width: 100%;
+            min-height: 100vh;
+            background-color: $blue;
+            img{
+                transition: all 1s ease-in-out;
+                animation: jumps 3s forwards infinite;
+            }
         }
         // ================================
         // End home section css

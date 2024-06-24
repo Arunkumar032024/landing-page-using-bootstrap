@@ -26,7 +26,7 @@
     <!-- ==============================
         header section
     ================================-->
-    <header class="px-0 px-sm-5">
+    <header class="px-0 px-sm-5 fixed-top top-0 left-0 mx-auto">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand text-white" href="#">Landing Page</a>
@@ -57,11 +57,11 @@
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu bg-transparent border-0" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-white" href="#">Dropdown 1</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Dropdown 2</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Dropdown 3</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Dropdown 4</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -92,7 +92,28 @@
         <!-- ==============================
             home section
         ================================-->
-        <section id="home"></section>
+        <section id="home" class="container-fluid pt-5 px-md-5">
+          <div class="row pt-5  px-lg-5">
+            <div class="col-sm-12 col-md-6 order-md-1 px-xl-5">
+              <img src="./assets/images/banner.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-6 pt-5 text-white order-md-0  px-xl-5">
+              <h2 class="fw-bold display-4">Better Solutions For Your Business</h2>
+              <p>We are team of talented designers making websites with Bootstrap</p>
+              <div class="row">
+                <div class="col-6 text-end">
+                  <a class="btn btn-info text-white">Get Started</a>
+                </div>
+                <div class="col-6">
+                  <a class="btn btn-outline-info text-white"><i class="fa-solid fa-play me-sm-2"></i> Watch Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <video controls>
+            <source src="https://youtu.be/LXb3EKWsInQ" type="video/mp4">
+          </video> -->
+        </section>
         <!-- ==============================
             End home section
         ================================-->
