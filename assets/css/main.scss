@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'variable', 'mixin';
-*{
+
+* {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
@@ -10,19 +11,22 @@
 // ================================
 // custom section css
 // ================================
-html{
+html {
     scroll-behavior: smooth;
 }
-.btn{
-    -webkit-appearance: none;
-    border-radius: 20px;
+
+h1 {
+    font-size: $font-lg;
 }
 
+button {
+    cursor: pointer;
 
-@keyframes jumps {
-    0%, 100%{transform: translateY(-10px);}
-    50%{transform: translateY(10px);}
+    &:active {
+        transform: scale(0.95);
+    }
 }
+
 // ================================
 // End custom section css
 // ================================
@@ -32,18 +36,31 @@ html{
 // ================================
 // body section css
 // ================================
-body{
+body {
     max-width: 1400px;
+    background-color: red;
     // ================================
     // header section css
     // ================================
-    header{
-        max-width: 1400px;
-        // background-color: $bglight;
-        // z-index: 1000;
-        nav{
+    header {
+        @include slowTransition();
+        position: sticky;
+        top: 0;
+        
+        background-color: transparent;
+        button {
+            font-size: $font-md;
+            display: none;
+        }
+        i {
+            cursor: pointer;
+
+            &:active {
+                transform: scale(0.95);
+            }
         }
     }
+
     // ================================
     // End header section css
     // ================================
@@ -52,20 +69,13 @@ body{
     // ================================
     // main section css 
     // ================================
-    main{
+    main {
 
         // ================================
         // home section css 
         // ================================
-        section#home{
-            width: 100%;
-            min-height: 100vh;
-            background-color: $blue;
-            img{
-                transition: all 1s ease-in-out;
-                animation: jumps 3s forwards infinite;
-            }
-        }
+        section#home {}
+
         // ================================
         // End home section css
         // ================================
@@ -74,9 +84,8 @@ body{
         // ================================
         // about section css 
         // ================================
-        section#home{
+        section#about {}
 
-        }
         // ================================
         // End about section css
         // ================================
@@ -85,9 +94,8 @@ body{
         // ================================
         // service section css 
         // ================================
-        section#service{
+        section#service {}
 
-        }
         // ================================
         // End service section css
         // ================================
@@ -96,9 +104,8 @@ body{
         // ================================
         // portfolio section css 
         // ================================
-        section#portfolio{
+        section#portfolio {}
 
-        }
         // ================================
         // End portfolio section css
         // ================================
@@ -107,9 +114,8 @@ body{
         // ================================
         // team section css 
         // ================================
-        section#team{
+        section#team {}
 
-        }
         // ================================
         // End team section css
         // ================================
@@ -118,9 +124,8 @@ body{
         // ================================
         // pricing section css 
         // ================================
-        section#pricing{
+        section#pricing {}
 
-        }
         // ================================
         // End pricing section css
         // ================================
@@ -129,18 +134,18 @@ body{
         // ================================
         // contact section css 
         // ================================
-        section#contact{
+        section#contact {}
 
-        }
         // ================================
         // End contact section css
         // ================================
 
 
-        
+
 
 
     }
+
     // ================================
     // End main section css
     // ================================
@@ -150,9 +155,8 @@ body{
     // ================================
     // footer section css 
     // ================================
-    footer{
+    footer {}
 
-    }
     // ================================
     // End footer section css
     // ================================
@@ -160,9 +164,7 @@ body{
 
 
 }
+
 // ================================
 // End body section css
 // ================================
-
-
-

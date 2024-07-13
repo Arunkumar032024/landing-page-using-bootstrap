@@ -10,31 +10,34 @@ html {
   scroll-behavior: smooth;
 }
 
-.btn {
-  -webkit-appearance: none;
-  border-radius: 20px;
+h1 {
+  font-size: 1.5rem;
 }
 
-@keyframes jumps {
-  0%, 100% {
-    transform: translateY(-10px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
+button {
+  cursor: pointer;
 }
+button:active {
+  transform: scale(0.95);
+}
+
 body {
   max-width: 1400px;
+  background-color: red;
 }
 body header {
-  max-width: 1400px;
+  transition: all 0.3s ease-in-out;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
 }
-body main section#home {
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgb(55, 81, 126);
+body header button {
+  font-size: 1rem;
+  display: none;
 }
-body main section#home img {
-  transition: all 1s ease-in-out;
-  animation: jumps 3s forwards infinite;
+body header i {
+  cursor: pointer;
+}
+body header i:active {
+  transform: scale(0.95);
 }/*# sourceMappingURL=main.css.map */
