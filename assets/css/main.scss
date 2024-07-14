@@ -46,7 +46,6 @@ body {
         @include slowTransition();
         position: sticky;
         top: 0;
-        
         background-color: transparent;
         button {
             font-size: $font-md;
@@ -58,6 +57,16 @@ body {
             &:active {
                 transform: scale(0.95);
             }
+        }
+        .modal{
+            background-color: $light-black-color;
+            pointer-events: all;
+            .modal-backdrop{
+                opacity: -0.5;
+            }
+        }
+        .modal-backdrop{
+            opacity: -0.5;
         }
     }
 

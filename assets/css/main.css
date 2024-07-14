@@ -40,4 +40,14 @@ body header i {
 }
 body header i:active {
   transform: scale(0.95);
+}
+body header .modal {
+  background-color: rgb(68, 68, 68);
+  pointer-events: all;
+}
+body header .modal .modal-backdrop {
+  opacity: -0.5;
+}
+body header .modal-backdrop {
+  opacity: -0.5;
 }/*# sourceMappingURL=main.css.map */
