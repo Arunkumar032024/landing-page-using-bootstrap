@@ -43,11 +43,20 @@ body header i:active {
 }
 body header .modal {
   background-color: rgb(68, 68, 68);
-  pointer-events: all;
 }
-body header .modal .modal-backdrop {
-  opacity: -0.5;
+body nav {
+  background-color: rgb(68, 68, 68);
 }
-body header .modal-backdrop {
-  opacity: -0.5;
+body nav .modal-content {
+  background-color: transparent;
+}
+body nav .modal-content .modal-header {
+  border-bottom: none;
+  color: #fff;
+}
+body nav .modal-content .modal-header .btn-close {
+  color: #fff;
+}
+body nav .modal-content .modal-body {
+  min-height: 85vh;
 }/*# sourceMappingURL=main.css.map */

@@ -60,20 +60,40 @@ body {
         }
         .modal{
             background-color: $light-black-color;
-            pointer-events: all;
-            .modal-backdrop{
-                opacity: -0.5;
-            }
-        }
-        .modal-backdrop{
-            opacity: -0.5;
         }
     }
 
     // ================================
     // End header section css
     // ================================
+    
+    
+    // ================================
+    // Navbar section css
+    // ================================
+    nav{
+        background-color: $light-black-color;
+        .modal-content{
+            background-color: transparent;
+            .modal-header{
+                border-bottom: none;
+                color: #fff;
+                .btn-close{
+                    color: #fff;
+                }
+            }
+            .modal-body{
+                min-height: 85vh;
+            }
+        }
+        
+    }
+    // ================================
+    // End Navbar section css
+    // ================================
 
+
+    
 
     // ================================
     // main section css 
