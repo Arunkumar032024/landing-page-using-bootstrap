@@ -83,7 +83,29 @@ body {
                 }
             }
             .modal-body{
-                min-height: 85vh;
+                // min-height: 85vh;
+                ul{
+                    li{
+                        a{
+                            color: #000;
+                            transition: color 0.3s ease-in-out;
+                            font-weight: 500;
+                            &:hover{
+                                color: rgb(60, 141, 247);
+                                &+i{
+                                    color: rgb(60, 141, 247);
+                                    
+                                }
+                            }
+                            &+i{
+                                &:hover{
+                                    cursor: pointer;
+                                    background-color: rgba(60, 141, 247, 0.5);;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         

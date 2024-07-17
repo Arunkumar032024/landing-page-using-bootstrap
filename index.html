@@ -51,36 +51,64 @@
     ================================-->
     <!-- Modal -->
     <nav class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog position-fixed start-0 end-0 top-0 bottom-0" >
             <div class="modal-content mt-3 border-0">
                 <div class="modal-header">
                     <i type="button" class="fa-solid fa-xmark text-white ms-auto fs-2" data-bs-dismiss="modal" aria-label="Close"></i>
                 </div>
-                <div class="modal-body bg-white rounded">
+                <div class="modal-body rounded bg-white" style="overflow-y: scroll; height: 80vh;">
                     <ul class="list-unstyled">
-                        <li class="">
-                            <a href="#home">Home</a>
+                        <li class="mb-3"> 
+                            <a href="#home" class="text-decoration-none">Home</a>
                         </li>
-                        <li>
-                            <a href="#about">About</a>
+                        <li class="mb-3">
+                            <a href="#about" class="text-decoration-none">About</a>
                         </li>
-                        <li>
-                            <a href="#services">Services</a>
+                        <li class="mb-3">
+                            <a href="#services" class="text-decoration-none">Services</a>
                         </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
+                        <li class="mb-3">
+                            <a href="#portfolio" class="text-decoration-none ">Portfolio</a>
                         </li>
-                        <li>
-                            <a href="#team">Team</a>
+                        <li class="mb-3">
+                            <a href="#team" class="text-decoration-none ">Team</a>
                         </li>
-                        <li>
-                            <a href="#pricing">Pricing</a>
+                        <li class="mb-3">
+                            <a href="#pricing" class="text-decoration-none">Pricing</a>
                         </li>
-                        <li>
-                            <a href="#home">Home</a>
+                        <li class="mb-3">
+                            <p class="d-flex justify-content-between"><a href="#home" class="text-decoration-none">Dropdown</a> <i class="fa-solid fa-angle-down p-2 rounded-pill"></i></p>
+                            <ul class="list-unstyled ms-3 border-1 border-dark p-2 rounded-1" style="background-color: rgba(0, 0, 0, 0.1)">
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">Dropdown 1</a>
+                                </li>
+                                <li class="mb-3">
+                                    <p class="d-flex justify-content-between"><a href="#home" class="text-decoration-none">Deep Dropdown</a> <i class="fa-solid fa-angle-down p-2 rounded-pill"></i></p>
+                                    <ul class="list-unstyled ms-3">
+                                        <li class="mb-3">
+                                            <a href="#" class="text-decoration-none">Deep Dropdown 1</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="#" class="text-decoration-none">Deep Dropdown 3</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="#" class="text-decoration-none">Deep Dropdown 3</a>
+                                        </li>
+                                        <li class="mb-3">
+                                            <a href="#" class="text-decoration-none">Deep Dropdown 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">Dropdown 3</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none">Dropdown 4</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#contact">Contact</a>
+                        <li class="mb-3">
+                            <a href="#contact" class="text-decoration-none ">Contact</a>
                         </li>
                     </ul>
                 </div>

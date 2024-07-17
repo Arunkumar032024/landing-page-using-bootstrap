@@ -57,6 +57,18 @@ body nav .modal-content .modal-header {
 body nav .modal-content .modal-header .btn-close {
   color: #fff;
 }
-body nav .modal-content .modal-body {
-  min-height: 85vh;
+body nav .modal-content .modal-body ul li a {
+  color: #000;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+}
+body nav .modal-content .modal-body ul li a:hover {
+  color: rgb(60, 141, 247);
+}
+body nav .modal-content .modal-body ul li a:hover + i {
+  color: rgb(60, 141, 247);
+}
+body nav .modal-content .modal-body ul li a + i:hover {
+  cursor: pointer;
+  background-color: rgba(60, 141, 247, 0.5);
 }/*# sourceMappingURL=main.css.map */
